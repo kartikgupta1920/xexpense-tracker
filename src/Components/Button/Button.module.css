@@ -1,0 +1,41 @@
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button Styles */
+  .primary {
+    /* Default blue button style */
+  }
+  
+  .success {
+    background-color: #28a745;
+  }
+  
+  .success:hover {
+    background-color: #218838;
+  }
+  
+  .failure {
+    background-color: #dc3545;
+  }
+  
+  .failure:hover {
+    background-color: #c82333;
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow if needed */
+  }
+  

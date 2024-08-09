@@ -32,7 +32,7 @@ export default function HomePage() {
   });
 
   useEffect(() => {
-    const localMoney = localStorage.getItem("balance");
+    const localMoney = localStorage.getItem("walletBalance");
 
     if(localMoney){
       setWalletBalance(Number(localMoney));
@@ -100,27 +100,27 @@ export default function HomePage() {
     if(isMounted){
       localStorage.setItem("balance", walletBalance);
     }
-  }, [walletBalance]);
+  }, [walletBalance, isMounted]);
 
   return (
     <div className={styles.container}>
       <h1>Expence Tracker</h1>
 
       <div className={styles.cardWrap}>
-        <Card
+        <Card className={styles.cardWidth}
           title="Wallet Balance"
-          walletbalance={walletBalance}
-          buttonTest="+ Add income"
+          walletBalance={walletBalance}
+          buttonText="+ Add income"
           buttonType="success"
           handleClick={() => {
             setIsAddBalanceOpen(true);
           }}
         />
 
-        <Card
+        <Card className={styles.cardWidth}
           title="Expenses"
-          walletbalance={expenses}
-          buttonTest="+ Add Expence"
+          walletBalance={expenses}
+          buttonText="+ Add Expence"
           buttonType="failure"
           handleClick={() => {
             setIsAddExpenseOpen(true);
@@ -141,8 +141,8 @@ export default function HomePage() {
             transactions={spentList}
             editTransactions={setSpentList}
             title="Recent Transactions"
-            walletbalance={walletBalance}
-            setmon={setWalletBalance}
+            walletBalance={walletBalance}
+            setWalletBalance={setWalletBalance}
         />
 
         <BarChart 
@@ -158,9 +158,9 @@ export default function HomePage() {
         <ExpenseForm
           setIsOpen={setIsAddExpenseOpen}
           spentList={spentList}
-          setSpentList={setSpentList}
+          walletBalance={walletBalance}
           setWalletBalance={setWalletBalance}
-          walletbalance={walletBalance}
+          setSpentList={setSpentList}
           />
       </Modal>
 

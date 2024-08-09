@@ -1,8 +1,42 @@
 .container {
-    width: 1256px;
-    height: 781px;
-    top: 36px;
-    left: 12px;
-    border: 1px solid rgba(155, 155, 155, 1);
-    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: #fff;
+
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
+  
+  /* Card Wrapper */
+  .cardWrap {
+    display: flex;
+    justify-content: space-around;    
+    margin-bottom: 30px;
+    padding: 50px 55px;
+    width: 100%;
+    background-color:#626262;
+    border-radius: 15px;
+  }
+  .cardWidth{
+    width: 500px;
+  }
+
+  
+ 
+  /* Transaction Wrapper */
+  .transactionWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  

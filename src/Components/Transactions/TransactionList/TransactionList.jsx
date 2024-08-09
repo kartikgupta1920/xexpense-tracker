@@ -57,8 +57,8 @@ function TransactionList({
               <TransactionCard
                 details={transaction}
                 key={transaction.id}
-                handleDelete={handleDelete(transaction.id)}
-                handleEdit={handleEdit(transaction.id)}
+                handleDelete={() => handleDelete(transaction.id)}
+                handleEdit={() => handleEdit(transaction.id)}
               />
             ))}
           </div>

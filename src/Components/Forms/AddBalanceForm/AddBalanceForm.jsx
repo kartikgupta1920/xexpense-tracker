@@ -3,7 +3,7 @@ import styles from './AddBalanceForm.module.css';
 import  Button from '../../Button/Button';
 import React, { useState } from 'react';
 
-function AddBalanceForm({setIsopen, setWalletBalance}){
+function AddBalanceForm({setIsOpen, setWalletBalance}){
     const [income, setIncome] =useState('');
     const { enqueueSnackbar} = useSnackbar();
  
@@ -12,12 +12,12 @@ function AddBalanceForm({setIsopen, setWalletBalance}){
 
         if(Number(income) < 0) {
             enqueueSnackbar("Income should be greater than 0", {variant: "warning"})
-            setIsopen(false)
+            setIsOpen(false)
             return
         }
 
         setWalletBalance(prev => prev + Number(income))
-        setIsopen(false)
+        setIsOpen(false)
     }
 
     return (

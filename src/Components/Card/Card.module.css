@@ -1,5 +1,5 @@
-.card {
-   background-color: var(--secondary-bg-color);
+/* .card {
+   background-color: #9b9b9b;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -31,4 +31,43 @@
     .cardTitle{
         font-size: 24px;
     }
-}
+} */
+
+/* Card */
+.card {
+    background-color: #9b9b9b;
+    height: 180px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 20px;    
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* flex: 1; */
+    margin: 0 25px;
+  }
+  
+  /* Card Title */
+  .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  /* Balance/Expense Color */
+  .success {
+    color: green;
+    font-size: 1.2rem; /* Slightly larger value */
+  text-align: left;
+  }
+  
+  .failure {
+    color: red;
+    font-size: 1.2rem;
+  text-align: left;
+  }
+

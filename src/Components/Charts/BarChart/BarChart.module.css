@@ -1,0 +1,30 @@
+/* .barChartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .barChartContainer canvas {
+    max-width: 400px;
+    max-height: 200px;
+  }
+   */
+
+   /* Bar Chart */
+.expenseChart {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .expenseChart h2 {
+    margin-bottom: 20px;
+  }
+  
+  .barWraper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
